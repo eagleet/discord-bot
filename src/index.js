@@ -5,11 +5,10 @@ const client = new Client({
     intents: [
         IntentsBitField.Flags.Guilds,
 		IntentsBitField.Flags.GuildMessages
-        // Add more intents as needed
     ]
 });
 
-const token = ''; // Replace with your bot's token
+const token = ''; // Replace with bot's token
 const monitoredURL = 'https://kavascan.com/address/0x201ECB1C439F92aFd5df5d399e195F73b01bB0F3/transactions#address-tabs'; // Replace with the URL you want to monitor
 let previousContent = '';
 
