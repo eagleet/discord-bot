@@ -9,13 +9,12 @@ const client = new Client({
     ]
 });
 
-const token = 'MTE0NjkwOTcwOTAwNjI3ODczNw.G6O0AD.dNpspWJ4YGtTJadqhsajV5VTjsiOBAtTLdbFIg'; // Replace with your bot's token
+const token = ''; // Replace with your bot's token
 const monitoredURL = 'https://kavascan.com/address/0x201ECB1C439F92aFd5df5d399e195F73b01bB0F3/transactions#address-tabs'; // Replace with the URL you want to monitor
 let previousContent = '';
 
 client.on('ready', () => {
     //console.log(`Logged in as ${client.user.tag}!`);
-    // Check for changes every 5 minutes (adjust as needed)
     setInterval(checkForChanges, 0.1 * 60 * 1000);
 });
 
